@@ -1,0 +1,6 @@
+# Files and directories to ignore
+_backup/
+.fluxbox/styles/
+.pandoc/html/
+.pandoc/word/
+

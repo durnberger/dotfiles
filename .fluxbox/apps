@@ -1,0 +1,8 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=atom) (class=Atom) (role=browser-window)
+  [Dimensions]	{47% 94%}
+  [Position]	(UPPERLEFT)	{6% 2%}
+[end]

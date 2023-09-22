@@ -1,0 +1,156 @@
+// variations for documents that will be printed
+@media print {
+	html {
+		font-size: $font-size-normal;
+	}
+
+    body {
+        max-width: 100%;
+        padding: 0;
+        background-color: $white;
+    }
+
+    aside, form, video {
+		display: none;
+	}
+    
+    header {
+        page-break-after: always; //push contents onto a new page
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $black;
+		page-break-after:avoid;
+	}
+
+	h1 {
+		string-set: title content();
+	}
+
+    h1 {
+        page-break-before: always;
+    }
+
+	h2 {
+		//page-break-before: always;
+		padding-top: 0;
+	}
+
+    /*h2:first-of-type {
+	    page-break-before: avoid;
+    }*/
+
+    p, em, ul, ol, li, th, tr, td {
+        color: $black;
+    }
+
+	p {
+		/* Try to have at least the final three lines carry across to the next page*/
+		widows: 3;
+	}
+
+	a {
+		page-break-inside:avoid;
+	}
+
+	a:link, a:visited, a {
+		color: $black;
+	}
+
+	a::after {
+		/*content: " (" attr(href) ")";*/
+		content: " ";
+	}
+
+	ul, ol, li, dl {
+		page-break-before:avoid;
+	}
+
+    table {
+        width: 95%;
+		page-break-inside:avoid;
+    }
+
+	blockquote {
+		page-break-inside: avoid;
+	}
+
+    footer {
+		margin-bottom: 0;
+		padding-bottom: 0;
+    }
+
+    .pagebreak {
+        page-break-after: always;
+    }
+}
+
+@page {
+    font-family: $font-family-primary;
+    margin: 20mm;
+    size: A4;
+        
+	@top-right {
+		content: counter(page);
+	    font-size: $font-size-tiny;
+	    height: 12mm;
+		width: 20mm;
+	    text-align: center;
+	}
+
+	@top-center {
+		background: $theme-color;
+		content: '';
+		display: block;
+		height: 0.2mm;
+		width: 100%;
+		opacity: 0.6;
+	}
+
+	@top-left {
+		content: string(title);
+		font-size: $font-size-tiny;
+		height: 12mm;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	@bottom-right {
+		content: 'Paul Dürnberger / paul@durnberger.co.uk';
+		font-size: $font-size-tiny;
+	    height: 12mm;
+	    width: 100%;
+		vertical-align: middle;
+	}
+
+	@bottom-center {
+		background: $theme-color;
+		content: '';
+		display: block;
+		height: 0.2mm;
+		width: 100%;
+		opacity: 0.6;
+	}
+
+	@bottom-left {
+		content: '';
+		font-size: $font-size-tiny;
+		text-transform: uppercase;
+		height: 12mm;
+		width: 100%;
+		vertical-align: middle;
+	}
+
+}
+
+    @page :first {
+		@top-left { background: none; content: '' }
+		@top-center { content: none }
+		@top-right { content: none }
+    }
+
+    @page :blank {
+		@top-left { background: none; content: '' }
+		@top-center { content: none }
+		@top-right { content: none }
+    }

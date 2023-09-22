@@ -1,0 +1,51 @@
+// print-letter.scss
+@import '00-font.scss';
+@import '01-base-settings';
+@import '02-style-settings';
+@import '04-settings-for-printing';
+
+// additional settings for a letter
+.title, .author, .date {
+    display: none;
+}
+
+html {
+    font-size: $font-size-normal;
+}
+
+header {
+    page-break-after: avoid;
+    border-bottom: none;
+}
+
+body {
+    font-family: $font-family-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-serif;
+}
+
+p, a, ul, ol, li, em, code, th, tr, td {
+	font-family: $font-family-serif;
+}
+
+.sender {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    border-top: none;
+    padding-top: 2rem;    
+}
+
+footer .signature {
+    text-align: left;
+}

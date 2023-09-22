@@ -1,0 +1,69 @@
+[begin] (Fluxbox)
+
+[exec] (Terminal) {urxvt}
+[exec] (Firefox){firefox}
+[exec] (File Manager) {thunar}
+[exec] (Notepad) {featherpad}
+[exec] (Menu) {rofi -show drun}
+
+[separator]
+
+[submenu] (Editors) {}
+	[exec] (Atom) {atom}
+  [exec] (Notepad) {featherpad}
+  [exec] (Nano) {urxvt -e nano}
+[end]
+
+[submenu] (Graphics) {}
+	[exec] (Darktable) {darktable}
+  [exec] (Entangle) {entangle}
+  [exec] (Gimp) {/usr/bin/gimp}
+  [exec] (Rapid Photo Downloader) {rapid-photo-downloader}
+  [exec] (Rawtherapee) {rawtherapee}
+  [exec] (Simple Scan) {simple-scan}
+[end]
+
+[submenu] (Internet) {}
+  [exec] (Filezilla){filezilla}
+  [exec] (Firefox){firefox}
+[end]
+
+[submenu](Sound & Video) {}
+  [exec] (K3b) {k3b}
+  [exec] (Rhythmbox) {rhythmbox}
+  [exec] (Sound Juicer) {sound-juicer}
+  [exec] (VLC) {vlc}
+[end]
+
+[submenu] (System) {}
+  [exec] (Archive Manager) {file-roller}
+  [exec] (LightDM Greeter Settings) {xterm -geometry 80x20-10+10 -e sudo lightdm-gtk-greeter-settings}
+  [exec] (Synaptic) {xterm -geometry 80x20-10+10 -e sudo synaptic}
+  [exec] (Update Manager) {xterm -geometry 80x20-10+10 -e update-manager}
+[end]
+
+[separator]
+
+[submenu] (Settings) {}
+  [config] (Configuration)
+
+  	[submenu] (Config Files) {}
+  		[exec] (init) {featherpad ~/.fluxbox/init}
+   		[exec] (keys) {featherpad ~/.fluxbox/keys}
+  		[exec] (menu) {featherpad ~/.fluxbox/menu}
+  		[exec] (startup) {featherpad ~/.fluxbox/startup}
+  	[end]
+
+  [submenu] (Styles) {}
+    	[stylesdir] (~/.fluxbox/styles)
+    	[separator]
+    	[stylesdir] (/usr/share/fluxbox/styles)
+  [end]
+
+  [workspaces] (Workspaces)
+  [reconfig] (Reconfigure)
+
+[end]
+
+[restart] (Restart)
+[exit] (Exit)

@@ -1,0 +1,79 @@
+{
+    // ----------- Default file format -----------
+      "files.defaultLanguage": "markdown",
+  
+    // ----------- Markdown editing -----------
+      "[markdown]": {
+      "editor.fontFamily": "\"IA Writer Duo S\", monospace",
+      "editor.insertSpaces": false,
+      "editor.fontSize": 14,
+      "editor.lineHeight": 21,     
+      "editor.fontLigatures": true,  
+      "editor.wordWrap": "wordWrapColumn",
+      "editor.wordWrapColumn": 82,
+      "editor.lineNumbers": "on",
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+      },
+  
+    // ----------- Pandoc -----------
+    // I have my own setup external to VSCode, and I am not using the pandoc plugin now
+    //  "pandoc.docxOptString": "-f markdown -p -t docx",
+    //  "pandoc.htmlOptString": "-f markdown --self-contained -t html5",
+    //  "pandoc.pdfOptString": "-f markdown --pdf-engine weasyprint --css ~/.pandoc/css/style.css",
+  
+    // ----------- Spell Right -----------
+      "spellright.language": [
+        "en_GB"
+      ],
+  
+      "spellright.statusBarIndicator": true,
+      "spellright.suggestionsInHints": true,  
+      "spellright.spellContext": "body",
+  
+      "spellright.documentTypes": [
+        "markdown",
+        "plaintext",
+        "jsonc",
+      ],
+  
+    // ----------- Spelling mistakes -----------
+    // ---- highlighted by a wavy red line -----
+      "workbench.colorCustomizations": {
+      "editorInfo.foreground": "#ff0000"
+    },
+  
+    // ------ MarkdownLint Configuration -------
+      "markdownlint.config": {
+      "default": true,
+      "MD025": false, //Multiple top-level headings in same document
+      "MD041": false, // Allow files to start without a heading
+      "no-hard-tabs": false,
+      "line-length": false,
+      },
+  
+    // ----------- General Preferences -----------
+      "editor.minimap.enabled": false,
+      "workbench.colorTheme": "Base16 Tomorrow Dark",
+      "redhat.telemetry.enabled": true,
+      "git.confirmSync": false,
+      "git.enableSmartCommit": true,
+      "zenMode.hideLineNumbers": false,
+      "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+      "workbench.settings.applyToAllProfiles": [
+        "editor.bracketPairColorization.independentColorPoolPerBracketType"
+      ],
+      "accessibility.verbosity.diffEditor": false,
+      "accessibility.verbosity.hover": false,
+      "accessibility.verbosity.inlineChat": false,
+      "accessibility.verbosity.inlineCompletions": false,
+      "accessibility.verbosity.keybindingsEditor": false,
+      "accessibility.verbosity.notebook": false,
+      "accessibility.verbosity.notification": false,
+      "accessibility.verbosity.panelChat": false,
+      "accessibility.verbosity.terminal": false,
+      "accessibility.verbosity.untitledHint": false,
+      "explorer.decorations.badges": false,
+      "explorer.decorations.colors": false,
+      "telemetry.telemetryLevel": "off",
+      "explorer.confirmDragAndDrop": false,
+  }

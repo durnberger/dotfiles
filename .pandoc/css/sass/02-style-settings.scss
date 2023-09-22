@@ -1,0 +1,213 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $font-size-normal;
+}
+
+body {
+    max-width: $body-width;
+    margin: 0 auto;
+    padding: 0 0.75rem 0 0.75rem;
+	background-color: $background-color;
+    font-family: $font-family-primary;
+	overflow-x: hidden ;
+}
+
+header {
+	max-width: $content-width;
+	margin-right: auto;
+	margin-left: auto;    
+    border-bottom: solid 0.05px $theme-color;
+    margin-bottom: 2rem;    
+}
+
+.navbar {
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+main,
+footer {
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+a.navbar-brand {
+	font-family: $font-family-title;
+	color: $theme-color;
+	font-size: 2.00rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.60rem;
+}
+
+h1, h1 a:link, h2, h2 a:link, h3, h3 a:link, h4, h5, h6 {
+    font-family: $font-family-headings;
+	font-weight: 600;
+    color: $font-color;
+    text-transform: uppercase;
+    padding-top: 1.668rem;
+}
+
+p, em, ul, ol, li, th, tr, td {
+	font-family: $font-family-primary;
+	color: $font-color;
+	font-weight: 400;
+	text-align: left;
+}
+
+h1 {
+	font-size: 1.50rem ;
+}
+
+h2, h2 a {
+	font-size: 1.30rem;
+	padding-top: 0;
+}
+
+h3 {
+	font-size: 1.10rem;
+}
+
+p, ul, li, em {
+	font-size: 1rem;
+	line-height: 1.668;
+}
+
+ul {
+    list-style-type: square;
+}
+
+//-------------------------------
+// Links
+a {
+	text-decoration: none;
+}
+
+a:visited, a:link {
+	color: $blue;
+}
+
+a:hover, a:active {
+	color: $blue;
+}
+
+//-------------------------------
+// Navigation
+.nav-item {
+	font-size: $font-size-tiny;
+	text-transform: uppercase;
+}
+
+//-------------------------------
+// Images
+img {
+    width: 100%;
+}
+
+img+em, figcaption {
+    color: $gray-800;
+    font-size: $font-size-small;
+    font-style: italic;
+    text-align: center;
+}
+
+//--------------------
+// Tables
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: $font-family-primary;
+    font-size: $font-size-small;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    background-color: $gray-300;
+    padding: 0 0.20rem 0 0.20rem;
+}
+
+td {
+    border: 1px solid $gray-300;
+    padding: 0.20rem;
+}
+
+// Gallery tables
+table.col1gallery {
+    width: 75%;
+    margin-bottom: 1rem;
+
+    td {
+        border: none;
+        padding: 0 1rem 0 1rem ;
+        width: 100%;
+    }
+}
+
+table.col2gallery {
+    td {
+        border: none;
+        width: 50%;
+    }
+}
+
+table.col3gallery {
+    td {
+        border: none;
+        width: 33%;
+    }
+} 
+        
+table.col4gallery {
+    td {
+        border: none;
+        width: 25%;
+    }
+} 
+        
+//---------------------------------
+// Blockquote
+blockquote {
+	width: 100%;
+	margin-top: 2rem;
+	padding-left: 1rem; // Gap between edge of block and text
+	border-left: solid 0.15rem $theme-color;
+}
+
+blockquote p {
+	font-style: italic;
+    color: $gray-700;
+    text-align: justify;
+}
+
+//-------------------------------
+// Footer
+footer {
+	margin-top: 3rem;
+	padding-top: 2rem ;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem ;
+}
+
+footer p, footer a {
+	font-size: $font-size-small;
+	text-align: left ;
+}
+
+.social-media {
+	text-align:left;
+	padding-bottom: 1rem;
+}
+
+.social-media a {
+	padding: 0 0.5rem 0 0.5rem; 
+	text-transform: uppercase;
+}

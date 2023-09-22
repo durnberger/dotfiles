@@ -1,0 +1,64 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+
+#========================================================================
+# Change your keymap:
+xmodmap "/home/paul/.Xmodmap"
+
+
+#========================================================================
+# Set the wallpaper:
+feh --bg-scale ~/wallpaper/helix2.jpg
+
+
+#========================================================================
+# Applications you want to run with fluxbox.
+
+# Screen Compositor
+picom -b &
+
+# System Monitor
+conky &
+
+# Network Manager
+nm-applet &
+
+# Notification Daemon
+# Dunst requires installation of libnotify-bin.
+# The config file is at ~/.config/dunst/dunstrc
+dunst &
+
+# Autolock
+# The screen will lock after 8 minutes of inactivity.
+xautolock -time 8 -locker "i3lock -i ~/wallpaper/matrix.png" &
+
+# Dropbox - decrypt and mount the Dropbox directory
+dropbox start &
+bash ~/bin/mount-encfs-dropbox.sh &
+
+# Clipboard Manager
+clipit &
+
+
+#========================================================================
+# Debian-local change:
+#   - fbautostart has been added with a quick hack to check to see if it
+#     exists. If it does, we'll start it up by default.
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+
+
+#========================================================================
+# And last but not least we start the window manager.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox -no-slit
+
+# or if you want to keep a log:
+#exec fluxbox -log "/home/paul/.fluxbox/log"

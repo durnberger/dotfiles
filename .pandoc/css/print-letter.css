@@ -1,0 +1,382 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/bpt3jug.css");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 0.75rem 0 0.75rem;
+  background-color: #fff;
+  font-family: source-serif-pro, serif;
+  overflow-x: hidden;
+}
+
+header {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: solid 0.05px #0375b4;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+main,
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a.navbar-brand {
+  font-family: margin-mvb, sans-serif;
+  color: #0375b4;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+h1, h1 a:link, h2, h2 a:link, h3, h3 a:link, h4, h5, h6 {
+  font-family: margin-mvb, sans-serif;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+  padding-top: 1.668rem;
+}
+
+p, em, ul, ol, li, th, tr, td {
+  font-family: source-serif-pro, serif;
+  color: #333333;
+  font-weight: 400;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2, h2 a {
+  font-size: 1.3rem;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p, ul, li, em {
+  font-size: 1rem;
+  line-height: 1.668;
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: #0375b4;
+}
+
+a:hover, a:active {
+  color: #0375b4;
+}
+
+.nav-item {
+  font-size: 9pt;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+img + em, figcaption {
+  color: #555555;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: source-serif-pro, serif;
+  font-size: 10pt;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: bold;
+  background-color: #dee2e6;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+td {
+  border: 1px solid #dee2e6;
+  padding: 0.2rem;
+}
+
+table.col1gallery {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+table.col1gallery td {
+  border: none;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+}
+
+table.col2gallery td {
+  border: none;
+  width: 50%;
+}
+
+table.col3gallery td {
+  border: none;
+  width: 33%;
+}
+
+table.col4gallery td {
+  border: none;
+  width: 25%;
+}
+
+blockquote {
+  width: 100%;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: solid 0.15rem #0375b4;
+}
+
+blockquote p {
+  font-style: italic;
+  color: #777777;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer p, footer a {
+  font-size: 10pt;
+  text-align: left;
+}
+
+.social-media {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.social-media a {
+  padding: 0 0.5rem 0 0.5rem;
+  text-transform: uppercase;
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+  }
+  body {
+    max-width: 100%;
+    padding: 0;
+    background-color: #fff;
+  }
+  aside, form, video {
+    display: none;
+  }
+  header {
+    page-break-after: always;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    page-break-after: avoid;
+  }
+  h1 {
+    string-set: title content();
+  }
+  h1 {
+    page-break-before: always;
+  }
+  h2 {
+    padding-top: 0;
+  }
+  /*h2:first-of-type {
+   page-break-before: avoid;
+  }*/
+  p, em, ul, ol, li, th, tr, td {
+    color: #000000;
+  }
+  p {
+    /* Try to have at least the final three lines carry across to the next page*/
+    widows: 3;
+  }
+  a {
+    page-break-inside: avoid;
+  }
+  a:link, a:visited, a {
+    color: #000000;
+  }
+  a::after {
+    /*content: " (" attr(href) ")";*/
+    content: " ";
+  }
+  ul, ol, li, dl {
+    page-break-before: avoid;
+  }
+  table {
+    width: 95%;
+    page-break-inside: avoid;
+  }
+  blockquote {
+    page-break-inside: avoid;
+  }
+  footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .pagebreak {
+    page-break-after: always;
+  }
+}
+@page {
+  font-family: source-serif-pro, serif;
+  margin: 20mm;
+  size: A4;
+  @top-right {
+    content: counter(page);
+    font-size: 9pt;
+    height: 12mm;
+    width: 20mm;
+    text-align: center;
+  }
+  @top-center {
+    background: #0375b4;
+    content: "";
+    display: block;
+    height: 0.2mm;
+    width: 100%;
+    opacity: 0.6;
+  }
+  @top-left {
+    content: string(title);
+    font-size: 9pt;
+    height: 12mm;
+    vertical-align: middle;
+    width: 100%;
+  }
+  @bottom-right {
+    content: "Paul Dürnberger / paul@durnberger.co.uk";
+    font-size: 9pt;
+    height: 12mm;
+    width: 100%;
+    vertical-align: middle;
+  }
+  @bottom-center {
+    background: #0375b4;
+    content: "";
+    display: block;
+    height: 0.2mm;
+    width: 100%;
+    opacity: 0.6;
+  }
+  @bottom-left {
+    content: "";
+    font-size: 9pt;
+    text-transform: uppercase;
+    height: 12mm;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+@page :first {
+  @top-left {
+    background: none;
+    content: "";
+  }
+  @top-center {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+@page :blank {
+  @top-left {
+    background: none;
+    content: "";
+  }
+  @top-center {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+.title, .author, .date {
+  display: none;
+}
+
+html {
+  font-size: 11pt;
+}
+
+header {
+  page-break-after: avoid;
+  border-bottom: none;
+}
+
+body {
+  font-family: source-serif-pro, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: source-serif-pro, serif;
+}
+
+p, a, ul, ol, li, em, code, th, tr, td {
+  font-family: source-serif-pro, serif;
+}
+
+.sender {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.contact-details {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  border-top: none;
+  padding-top: 2rem;
+}
+
+footer .signature {
+  text-align: left;
+}
+
+/*# sourceMappingURL=print-letter.css.map */
