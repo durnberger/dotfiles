@@ -44,7 +44,7 @@ map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
 -- Remember to install a suitable clipboard programme, for example 'xclip'
 -- More information on the subject can be found via ':h clipboard'
 map("n", "<C-v>", "v", {})      -- switch to visual mode 
-map("n", "p", "P", {})          -- capital 'P' puts content before cursor
+--map("n", "p", "P", {})          -- capital 'P' puts content before cursor
 
 map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode   
 
@@ -55,7 +55,7 @@ map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode
 map("n", "sr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
 map("n", "sb", ":split<cr> <C-w>=<cr>", {} )    -- split below
 
--- Equalize width of open windows 
+-- Equalize size of open windows 
 map("n", "se", "<C-w>=<cr>", {})
 
 -- Move around open windows
