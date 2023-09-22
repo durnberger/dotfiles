@@ -55,6 +55,9 @@ map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode
 map("n", "sr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
 map("n", "sb", ":split<cr> <C-w>=<cr>", {} )    -- split below
 
+-- Equalize width of open windows 
+map("n", "se", "<C-w>=<cr>", {})
+
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})
 map("n", "<C-Left>", "<C-w>h", {})
