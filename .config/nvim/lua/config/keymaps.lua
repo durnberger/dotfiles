@@ -44,7 +44,7 @@ map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
 -- Remember to install a suitable clipboard programme, for example 'xclip'
 -- More information on the subject can be found via ':h clipboard'
 map("n", "<C-v>", "v", {})      -- switch to visual mode 
---map("n", "p", "P", {})          -- capital 'P' puts content before cursor
+map("n", "p", "P", {})          -- capital 'P' puts content before cursor
 
 map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode   
 
@@ -65,4 +65,7 @@ map("n", "<C-Up>", "<C-w>k", {})
 map("n", "<C-Down>", "<C-w>j", {})
 
 -------------------------------------------------------------------------------------------
-
+-- Tidy tables
+-- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
+map("n", "<leader>1", "vip :!pandoc -t markdown-simple_tables<cr>", {})
+map("i", "<leader>1", "<C-o>vip :!pandoc -t markdown-simple_tables<cr>", {})
