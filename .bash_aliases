@@ -15,7 +15,7 @@ alias top='htop'
 alias backup='~/bin/backup-home-directory.sh'
 
 # Fuzzy Finder
-alias f='$EDITOR "$(fzf)"'
+#alias f='$EDITOR "$(fzf)"'
 alias ff='~/bin/fuzzyfiles.sh'
 alias fh='~/bin/fuzzyhistory.sh'
 
