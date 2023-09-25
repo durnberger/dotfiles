@@ -15,8 +15,8 @@ alias top='htop'
 alias backup='~/bin/backup-home-directory.sh'
 
 # Fuzzy Finder
-#alias f='$EDITOR "$(fzf)"'
-alias ff='~/bin/fuzzyfiles.sh'
+alias ff='$EDITOR "$(fzf)"'
+alias fg='~/bin/fuzzygrep.sh'
 alias fh='~/bin/fuzzyhistory.sh'
 
 # Github Push
@@ -28,11 +28,14 @@ alias jserve="bundle exec jekyll serve --livereload"
 # Lock Screen
 alias lock='~/bin/lock.sh'
 
-# Note New Daily
+# Note New Daily (Journal)
 alias dn='~/bin/new-daily-note.sh'
 
-# Note New Unique
-alias nn='~/bin/new-unique-note.sh'
+# Note New Quick (Notes)
+alias qn='~/bin/new-quick-note.sh'
+
+# Note New Topical (Research)
+alias nn='~/bin/new-topical-note.sh'
 
 # Print
 alias print='~/bin/print-options.sh'
