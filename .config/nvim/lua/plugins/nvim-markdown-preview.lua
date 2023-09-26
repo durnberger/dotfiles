@@ -1,6 +1,8 @@
 return {
    "davidgranstrom/nvim-markdown-preview",
 
+    lazy = true,
+
     config = function()
         
         -- preferences

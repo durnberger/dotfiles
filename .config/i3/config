@@ -168,11 +168,14 @@ bindsym $mod+shift+f exec $terminal -e mc
 bindsym $mod+shift+g exec gimp
 
 # Open eMail client
-# Present email service does not provide imap access, so this option not required 
+# This option is not required for now 
 #bindsym $mod+shift+m exec $terminal -e neomutt
 
 # Open music player
 bindsym $mod+shift+p exec $terminal -e musikcube
+
+# New daily note 
+bindsym $mod+shift+n exec $terminal -e /home/paul/bin/new-daily-note.sh 
 
 # -----------------------
 # Programme Menu/Launcher
