@@ -1,6 +1,5 @@
 return {
     "folke/zen-mode.nvim",
-    lazy = true,
 
     config = function()
     
@@ -10,6 +9,6 @@ return {
         keymap.set("n", "<leader>z", ":ZenMode<cr>", {}) 
         keymap.set("i", "<leader>z", "<C-o>:ZenMode<cr>", {}) 
     
-        end,
+    end,
 
 }

@@ -174,8 +174,8 @@ bindsym $mod+shift+g exec gimp
 # Open music player
 bindsym $mod+shift+p exec $terminal -e musikcube
 
-# New daily note 
-bindsym $mod+shift+n exec $terminal -e /home/paul/bin/new-daily-note.sh 
+# New quick note 
+bindsym $mod+shift+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
 
 # -----------------------
 # Programme Menu/Launcher
