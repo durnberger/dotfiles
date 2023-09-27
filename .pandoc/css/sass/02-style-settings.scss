@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     padding: 0 0.75rem 0 0.75rem;
 	background-color: $background-color;
-    font-family: $font-family-primary;
+    font-family: $font-family-text;
 	overflow-x: hidden ;
 }
 
@@ -54,7 +54,7 @@ h1, h1 a:link, h2, h2 a:link, h3, h3 a:link, h4, h5, h6 {
 }
 
 p, em, ul, ol, li, th, tr, td {
-	font-family: $font-family-primary;
+	font-family: $font-family-text;
 	color: $font-color;
 	font-weight: 400;
 	text-align: left;
@@ -124,7 +124,7 @@ table {
     margin-right: auto;    
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-family: $font-family-primary;
+    font-family: $font-family-text;
     font-size: $font-size-small;
     border-collapse: collapse;
 }
@@ -178,7 +178,7 @@ table.col4gallery {
 blockquote {
 	width: 100%;
 	margin-top: 2rem;
-	padding-left: 1rem; // Gap between edge of block and text
+	padding-left: 1rem;
 	border-left: solid 0.15rem $theme-color;
 }
 

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["sass/00-font.scss","sass/print-memo.scss","sass/01-base-settings.scss"],"names":[],"mappings":"AACQ;ACGR;EACI;EACA;EACA;EACA,kBCKO;;;ADDX;EACI,OCRM;;;ADYV;EACC;EACA;EACG;EACH;EACA;;;AAGD;EACC;EACG,OCNO;EDOP;;;AAGJ;EACI","file":"print-memo.css"}

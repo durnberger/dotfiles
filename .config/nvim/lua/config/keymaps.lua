@@ -65,7 +65,13 @@ map("n", "<C-Up>", "<C-w>k", {})
 map("n", "<C-Down>", "<C-w>j", {})
 
 -------------------------------------------------------------------------------------------
+-- Open terminal window to the right of the current window  
+-- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
+map("n", "<leader>x", ":vsplit<cr> <C-w>l :term<cr> i", {})
+ 
+-------------------------------------------------------------------------------------------
 -- Tidy tables
 -- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
 map("n", "<leader>1", "vip :!pandoc -t markdown-simple_tables<cr>", {})
 map("i", "<leader>1", "<C-o>vip :!pandoc -t markdown-simple_tables<cr>", {})
+

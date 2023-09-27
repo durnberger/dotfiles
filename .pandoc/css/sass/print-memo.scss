@@ -1,0 +1,35 @@
+// print-memo.scss
+@import '00-font.scss';
+@import '01-base-settings';
+
+body {
+    font-family: $font-family-serif;
+    max-width: 100%;
+    padding: 0;
+    background-color: $white;
+}
+
+// Emphasis
+em {
+    color: $red;
+}
+
+// Blockquote
+blockquote {
+	width: 100%;
+	margin-top: 1.5rem;
+    margin-left: 0;
+	padding-left: 1rem;
+	border-left: solid 0.15rem $font-color;
+}
+
+blockquote p {
+	font-style: italic;
+    color: $gray-800;
+    text-align: justify;
+}
+
+a::after {
+    content: " (" attr(href) ")";
+}
+

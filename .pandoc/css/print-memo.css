@@ -1,0 +1,31 @@
+@import url("https://use.typekit.net/bpt3jug.css");
+body {
+  font-family: source-serif-pro, serif;
+  max-width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+em {
+  color: #dc3545;
+}
+
+blockquote {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: solid 0.15rem #333333;
+}
+
+blockquote p {
+  font-style: italic;
+  color: #555555;
+  text-align: justify;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+}
+
+/*# sourceMappingURL=print-memo.css.map */

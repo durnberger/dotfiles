@@ -2,4 +2,20 @@
 @import '00-font.scss';
 @import '01-base-settings';
 @import '02-style-settings';
-@import '03-settings-for-a-webpage';
+
+html {
+    font-size: $font-size-normal;
+}
+
+body {
+    font-family: $font-family-sans;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-sans;
+}
+
+p, a, ul, ol, li, em, code, th, tr, td {
+	font-family: $font-family-sans;
+}
