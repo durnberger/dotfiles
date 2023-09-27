@@ -17,7 +17,7 @@
 # =====================================================================================
 #
 # Modifier Keys
-#
+# -------------
 # shift: shift
 # lock: Caps_Lock
 # control: Control (L&R)
@@ -29,6 +29,8 @@
 set $ctrl control
 set $mod Mod4
 
+# Preferred Terminal
+# ------------------
 set $terminal kitty
 
 # =====================================================================================
@@ -38,7 +40,6 @@ set $terminal kitty
 # =====================================================================================
 #
 # Set the Font
-#
 set $font pango:monospace 10
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -159,23 +160,26 @@ exec --no-startup-id sleep 120s && ~/bin/server-mount.sh
 bindsym $mod+Return exec $terminal
 
 # Start the internet browser
-bindsym $mod+shift+b exec brave-browser
+bindsym $mod+b exec brave-browser
 
 # Open the file manager
-bindsym $mod+shift+f exec $terminal -e mc
+bindsym $mod+f exec $terminal -e mc
 
 # Start the graphics editor
-bindsym $mod+shift+g exec gimp
+bindsym $mod+g exec gimp
 
 # Open eMail client
 # This option is not required for now 
 #bindsym $mod+shift+m exec $terminal -e neomutt
 
 # Open music player
-bindsym $mod+shift+p exec $terminal -e musikcube
+bindsym $mod+p exec $terminal -e musikcube
 
 # New quick note 
-bindsym $mod+shift+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
+bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
+
+# Writing selection 
+bindsym $mod+w exec $terminal -e /home/paul/bin/writing-selection.sh & 
 
 # -----------------------
 # Programme Menu/Launcher
@@ -220,7 +224,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+k focus up
 #bindsym $mod+l focus right
 
-# Alternatively, you can use the cursor keys:
+# Change focus with the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -232,7 +236,7 @@ bindsym $mod+Right focus right
 #bindsym $mod+Shift+k move up
 #bindsym $mod+Shift+l move right
 
-# Alternatively, you can use the cursor keys:
+# Move the focused windows with the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -245,7 +249,7 @@ bindsym $mod+Shift+Right move right
 #bindsym $mod+ctrl+v split v
 
 # Enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
@@ -298,16 +302,16 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 # Move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+#bindsym $mod+Shift+1 move container to workspace number $ws1
+#bindsym $mod+Shift+2 move container to workspace number $ws2
+#bindsym $mod+Shift+3 move container to workspace number $ws3
+#bindsym $mod+Shift+4 move container to workspace number $ws4
+#bindsym $mod+Shift+5 move container to workspace number $ws5
+#bindsym $mod+Shift+6 move container to workspace number $ws6
+#bindsym $mod+Shift+7 move container to workspace number $ws7
+#bindsym $mod+Shift+8 move container to workspace number $ws8
+#bindsym $mod+Shift+9 move container to workspace number $ws9
+#bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # =====================================================================================
 #
@@ -366,7 +370,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

@@ -52,11 +52,11 @@ map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode
 -- Split Screen 
 
 -- Open a split screen and equalise the size of each window
-map("n", "sr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
-map("n", "sb", ":split<cr> <C-w>=<cr>", {} )    -- split below
+map("n", "wr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
+map("n", "wb", ":split<cr> <C-w>=<cr>", {} )    -- split below
 
 -- Equalize size of open windows 
-map("n", "se", "<C-w>=<cr>", {})
+map("n", "we", "<C-w>=<cr>", {})
 
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})
