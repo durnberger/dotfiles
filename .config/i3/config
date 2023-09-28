@@ -160,38 +160,35 @@ exec --no-startup-id sleep 120s && ~/bin/server-mount.sh
 bindsym $mod+Return exec $terminal
 
 # Start the internet browser
-bindsym $mod+b exec brave-browser
+bindsym $mod+i exec brave-browser
 
 # Start the graphics editor
 bindsym $mod+g exec gimp
 
 # Open eMail client
 # This option is not required for now 
-#bindsym $mod+shift+m exec $terminal -e neomutt
+#bindsym $mod+e exec $terminal -e neomutt
 
 # Open music player
-bindsym $mod+p exec $terminal -e musikcube
+bindsym $mod+m exec $terminal -e musikcube
 
 # New quick note 
 bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
 
-# Writing selection 
-bindsym $mod+w exec $terminal -e /home/paul/bin/writing-selection.sh & 
-
 # -----------------------
-# Programme Menu/Launcher
+# Programme Launcher
 # -----------------------
 #
 # The default setting:
 # bindsym $mod+l exec dmenu_run
 
-# There also is the (new) i3-dmenu-desktop which only displays applications
+# There also is the i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. The following command will cause dmenu to display
 # only those apps with a graphical interface:
 #bindsym $mod+l exec --no-startup-id i3-dmenu-desktop
 
 # Alternatively, replace dmenu with rofi
-bindsym $mod+m exec --no-startup-id rofi -show drun
+bindsym $mod+l exec --no-startup-id rofi -show drun
 
 # --------------------------------
 # Pulse Audio

@@ -68,7 +68,11 @@ map("n", "<C-Down>", "<C-w>j", {})
 -- Open terminal window to the right of the current window  
 -- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
 map("n", "<leader>x", ":vsplit<cr> <C-w>l :term<cr> i", {})
- 
+
+-- Open terminal window and run my `print-options` script
+-- (`print` is the bash alias I use to run the script)
+map("n", "<leader>p", ":vsplit<cr> <C-w>l :term<cr> i print<cr>", {})
+
 -------------------------------------------------------------------------------------------
 -- Tidy tables
 -- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
