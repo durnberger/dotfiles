@@ -1,6 +1,5 @@
----------------------------------------------------------------------------------------------
 -- keymap
----------------------------------------------------------------------------------------------
+-- ======
 
 local function map(mode, lhs, rhs, opts)
    
@@ -50,6 +49,12 @@ map("i", "<C-v>", "<ESC>v", {})     -- switch to visual mode
 
 map("i", "<leader>p", "<C-o>P", {}) -- paste in insert mode
 map("n", "<leader>p", "p", {})      -- just in case I forget which mode I'm in!!
+
+-------------------------------------------------------------------------------------------
+-- Ctrl-return will create a line break.
+-- Now when printing a markdown file, those lines that do not have paragraph breaks 
+-- between them will format correctly
+map("i", "<C-cr>", " <br /><cr>", {})
 
 -------------------------------------------------------------------------------------------
 -- Split Windows 
