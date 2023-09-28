@@ -1,10 +1,6 @@
 # ~/.bashrc
 #
 
-# © Paul Dürnberger 
-# Creative Commons Attribution 4.0: CC BY-SA
-#
-
 #--------------------------------------------------------------------------------------
 # Xresources
 #
@@ -66,7 +62,6 @@ export EDITOR=$VISUAL
 # light cyan   \[\e[01;36m\]
 # white        \[\e[01;37m\]
 # no color     \[\e[00m\]
-
 PS1="\[\e[00;32m\]\u@\h \[\e[00;36m\]\w \[\e[00m\]$ "
 
 #--------------------------------------------------------------------------------------
@@ -83,20 +78,18 @@ export PATH=$HOME/gems/bin:$PATH
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Default Search Settings
-# --files           list only file names
-# --hidden          show hiddden files
-# --no-follow       don't follow symbolic links
-# --no-ingore-vcs   don't ignore version control files
-# -g                items to include or exclude in search
+# --files               list only file names
+# --hidden              show hiddden files
+# --no-follow           don't follow symbolic links
+# --no-ingore-vcs       don't ignore version control files
+# -g                    items to include or exclude in search
 export FZF_DEFAULT_COMMAND='rg --files --no-follow --hidden --no-ignore-vcs'
 
 # Additional Search Otions
-# --multi               :allows making multiple selections with Tab or Shift-Tab
-# --height x%           :% of screen occupied by search window   
-# --reverse             :provides a top down layout
-# --preview "cat {}"    :display preview of the selected file
-# --border              :border around preview box
+# --multi               allows making multiple selections with Tab or Shift-Tab
+# --height x%           % of screen occupied by search window   
+# --reverse             provides a top down layout
+# --preview "cat {}"    display preview of the selected file
+# --border              border around preview box
 export FZF_DEFAULT_OPTS='--multi --preview "cat {}" --border'
-
-#--------------------------------------------------------------------------------------
 
