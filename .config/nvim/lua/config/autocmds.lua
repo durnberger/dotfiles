@@ -21,4 +21,8 @@ vim.api.nvim_create_autocmd(
 
 -- activate zenmode when a markdown document is opened
 -- https://github.com/folke/zen-mode.nvim/issues/51 
-vim.cmd('autocmd VimEnter *.md :ZenMode')
+--vim.cmd('autocmd VimEnter *.md :ZenMode')
+
+-- start a terminal window in insert mode
+-- https://vi.stackexchange.com/questions/3670/how-to-enter-insert-mode-when-entering-neovim-terminal-pane
+vim.cmd('autocmd BufWinEnter,WinEnter term://* startinsert')

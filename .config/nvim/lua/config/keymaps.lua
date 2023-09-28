@@ -17,7 +17,9 @@ local function map(mode, lhs, rhs, opts)
 end
 
 ---------------------------------------------------------------------------------------------
--- Set the leader key 
+-- Set the leader key
+-- For the space bar, use " " with a space between the quote marks.
+-- For the backslash, use "\\"
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
 
@@ -43,13 +45,14 @@ map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
 --
 -- Remember to install a suitable clipboard programme, for example 'xclip'
 -- More information on the subject can be found via ':h clipboard'
-map("n", "<C-v>", "v", {})      -- switch to visual mode 
-map("n", "p", "P", {})          -- capital 'P' puts content before cursor
+map("n", "<C-v>", "v", {})          -- switch to visual mode 
+map("i", "<C-v>", "<ESC>v", {})     -- switch to visual mode
 
-map("i", "<C-v>", "<ESC>v", {}) -- switch to visual mode   
+map("i", "<leader>p", "<C-o>P", {}) -- paste in insert mode
+map("n", "<leader>p", "p", {})      -- just in case I forget which mode I'm in!!
 
 -------------------------------------------------------------------------------------------
--- Split Screen 
+-- Split Windows 
 
 -- Open a split screen and equalise the size of each window
 map("n", "wr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
@@ -58,20 +61,19 @@ map("n", "wb", ":split<cr> <C-w>=<cr>", {} )    -- split below
 -- Equalize size of open windows 
 map("n", "we", "<C-w>=<cr>", {})
 
+-- Open terminal window to the right of the current window  
+-- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
+map("n", "wx", ":vsplit<cr> <C-w>l :term<cr> i", {})
+
+-- Open terminal window and run my `print-options` script
+-- (`print` is the bash alias I use to run the script)
+map("n", "wp", ":vsplit<cr> <C-w>l :term<cr> i print<cr>", {})
+
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})
 map("n", "<C-Left>", "<C-w>h", {})
 map("n", "<C-Up>", "<C-w>k", {})
 map("n", "<C-Down>", "<C-w>j", {})
-
--------------------------------------------------------------------------------------------
--- Open terminal window to the right of the current window  
--- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
-map("n", "<leader>x", ":vsplit<cr> <C-w>l :term<cr> i", {})
-
--- Open terminal window and run my `print-options` script
--- (`print` is the bash alias I use to run the script)
-map("n", "<leader>p", ":vsplit<cr> <C-w>l :term<cr> i print<cr>", {})
 
 -------------------------------------------------------------------------------------------
 -- Tidy tables
