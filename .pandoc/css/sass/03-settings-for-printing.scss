@@ -58,7 +58,6 @@
 	}
 
 	a::after {
-		/*content: " (" attr(href) ")";*/
 		content: " ";
 	}
 
@@ -116,7 +115,7 @@
 	}
 
 	@bottom-right {
-		content: 'Paul Dürnberger / paul@durnberger.co.uk';
+		content: 'Paul Dürnberger';
 		font-size: $font-size-tiny;
 	    height: 12mm;
 	    width: 100%;

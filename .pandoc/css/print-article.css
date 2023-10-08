@@ -161,14 +161,15 @@ table.col4gallery td {
 
 blockquote {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 0;
   padding-left: 1rem;
   border-left: solid 0.15rem #0375b4;
 }
 
 blockquote p {
   font-style: italic;
-  color: #777777;
+  color: #555555;
   text-align: justify;
 }
 
@@ -239,7 +240,6 @@ footer p, footer a {
     color: #000000;
   }
   a::after {
-    /*content: " (" attr(href) ")";*/
     content: " ";
   }
   ul, ol, li, dl {
@@ -287,7 +287,7 @@ footer p, footer a {
     width: 100%;
   }
   @bottom-right {
-    content: "Paul Dürnberger / paul@durnberger.co.uk";
+    content: "Paul Dürnberger";
     font-size: 9pt;
     height: 12mm;
     width: 100%;
