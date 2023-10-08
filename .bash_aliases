@@ -53,5 +53,6 @@ alias update='sudo -- sh -c "apt update && apt -y upgrade && apt -y --purge auto
 alias vpn='~/bin/vpn.sh'
 
 # Writing
-alias write='~/bin/writing-selection.sh'
+alias ws='~/bin/writing-selection.sh'
+alias wd='ranger ~/Documents/Writing/'
 

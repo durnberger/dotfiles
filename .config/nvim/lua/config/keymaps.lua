@@ -57,6 +57,13 @@ map("n", "<leader>p", "p", {})      -- just in case I forget which mode I'm in!!
 map("i", "<C-cr>", " <br /><cr>", {})
 
 -------------------------------------------------------------------------------------------
+-- Convert open markdown document to pdf
+-- `G` moves the cursor to the end of the document
+-- `A` switches back to insert mode 
+map("n", "<leader>w", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
+map("i", "<leader>w", "<ESC>:%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> GA", {})
+
+-------------------------------------------------------------------------------------------
 -- Split Windows 
 
 -- Open a split screen and equalise the size of each window
@@ -69,10 +76,6 @@ map("n", "we", "<C-w>=<cr>", {})
 -- Open terminal window to the right of the current window  
 -- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
 map("n", "wx", ":vsplit<cr> <C-w>l :term<cr> i", {})
-
--- Open terminal window and run my `print-options` script
--- (`print` is the bash alias I use to run the script)
-map("n", "wp", ":vsplit<cr> <C-w>l :term<cr> i print<cr>", {})
 
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})

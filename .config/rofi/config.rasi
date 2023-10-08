@@ -1,13 +1,11 @@
 configuration {
-    modi: "drun,run,combi,window,filebrowser";
     combi-modi: "drun,run";
-    /* font: "Monospace 11"; */
-    font: "Open Sans 11";
-    sidebar-mode: true;
-    show-icons: true;
-    terminal: "kitty";
     drun-match-fields: "name,generic,exec,categories";
+    font: "Jet Brains Mono 11";
     matching: "fuzzy";
- 
+    modi: "drun,run,combi,window,filebrowser";
+    show-icons: true;
+    sidebar-mode: true;
+    terminal: "kitty";
  }
 @theme "~/.config/rofi/themes/arc-dark.rasi"

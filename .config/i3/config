@@ -170,13 +170,13 @@ bindsym $mod+g exec gimp
 #bindsym $mod+e exec $terminal -e neomutt
 
 # Open music player
-bindsym $mod+m exec $terminal -e musikcube
+bindsym $mod+p exec $terminal -e musikcube
 
 # New quick note 
 bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
 
 # -----------------------
-# Programme Launcher
+# Programme Menu Launcher
 # -----------------------
 #
 # The default setting:
@@ -188,7 +188,7 @@ bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh
 #bindsym $mod+l exec --no-startup-id i3-dmenu-desktop
 
 # Alternatively, replace dmenu with rofi
-bindsym $mod+l exec --no-startup-id rofi -show drun
+bindsym $mod+m exec --no-startup-id rofi -show drun
 
 # --------------------------------
 # Pulse Audio
@@ -293,7 +293,6 @@ bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -305,7 +304,6 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # =====================================================================================
 #
