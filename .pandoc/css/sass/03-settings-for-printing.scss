@@ -50,7 +50,7 @@
 	}
 
 	a {
-		page-break-inside:avoid;
+		page-break-inside: avoid;
 	}
 
 	a:link, a:visited, a {
@@ -62,12 +62,12 @@
 	}
 
 	ul, ol, li, dl {
-		page-break-before:avoid;
+		page-break-before: avoid;
 	}
 
     table {
         width: 95%;
-		page-break-inside:avoid;
+		page-break-inside: avoid;
     }
 
 	blockquote {
@@ -92,24 +92,16 @@
 	@top-right {
 		content: counter(page);
 	    font-size: $font-size-tiny;
-	    height: 12mm;
-		width: 20mm;
-	    text-align: center;
+	    vertical-align: middle;
 	}
 
 	@top-center {
-		background: $theme-color;
 		content: '';
-		display: block;
-		height: 0.2mm;
-		width: 100%;
-		opacity: 0.6;
 	}
 
 	@top-left {
 		content: string(title);
 		font-size: $font-size-tiny;
-		height: 12mm;
 		vertical-align: middle;
 		width: 100%;
 	}
@@ -117,7 +109,6 @@
 	@bottom-right {
 		content: 'Paul Dürnberger';
 		font-size: $font-size-tiny;
-	    height: 12mm;
 	    width: 100%;
 		vertical-align: middle;
 	}
@@ -126,7 +117,7 @@
 		background: $theme-color;
 		content: '';
 		display: block;
-		height: 0.2mm;
+		height: 0.25mm;
 		width: 100%;
 		opacity: 0.6;
 	}
@@ -135,21 +126,20 @@
 		content: '';
 		font-size: $font-size-tiny;
 		text-transform: uppercase;
-		height: 12mm;
 		width: 100%;
 		vertical-align: middle;
 	}
 
 }
 
-    @page :first {
-		@top-left { background: none; content: '' }
-		@top-center { content: none }
-		@top-right { content: none }
-    }
+@page :first {
+	@top-left { background: none; content: '' }
+	@top-center { content: none }
+	@top-right { content: none }
+}
 
-    @page :blank {
-		@top-left { background: none; content: '' }
-		@top-center { content: none }
-		@top-right { content: none }
-    }
+@page :blank {
+	@top-left { background: none; content: '' }
+	@top-center { content: none }
+	@top-right { content: none }
+}

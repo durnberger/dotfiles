@@ -8,6 +8,10 @@ body {
     font-family: $font-family-serif;
 }
 
+header {
+    page-break-after: avoid;
+}
+
 em {
     color: $red;
 }

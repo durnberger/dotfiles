@@ -28,11 +28,8 @@ alias jserve="bundle exec jekyll serve --livereload"
 # Lock Screen
 alias lock='~/bin/lock.sh'
 
-# Note New Daily (Journal)
-alias nn='~/bin/new-daily-note.sh'
-
-# Note New Topical (Research)
-alias tn='~/bin/new-topical-note.sh'
+# Note New Quick (Unsorted_Notes)
+alias nn='~/bin/new-quick-note.sh'
 
 # Print
 alias print='~/bin/print-options.sh'
@@ -53,6 +50,5 @@ alias update='sudo -- sh -c "apt update && apt -y upgrade && apt -y --purge auto
 alias vpn='~/bin/vpn.sh'
 
 # Writing
-alias ws='~/bin/writing-selection.sh'
-alias wd='ranger ~/Documents/Writing/'
+alias write='~/bin/writing-selection.sh'
 

@@ -57,11 +57,6 @@ font $font
 #
 # =====================================================================================
 #
-# -------------------------
-# Connect Bluetooth Devices
-#exec --no-startup-id ~/bin/connect-bluetooth.sh
-
-# -------------------------
 # Notification Daemon
 # Dunst requires installation of libnotify-bin.
 # The config file is at ~/.config/dunst/dunstrc
@@ -89,7 +84,11 @@ exec_always --no-startup-id xautolock -time 5 -locker ~/bin/lock.sh
 
 # -------------------------
 # Bluetooth Manager
-exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-applet
+
+# -------------------------
+# Connect Bluetooth Devices
+#exec --no-startup-id ~/bin/connect-bluetooth.sh
 
 # -------------------------
 # HP Printer System Tray Status Service
@@ -152,7 +151,6 @@ exec --no-startup-id sleep 120s && ~/bin/server-mount.sh
 #
 # =====================================================================================
 #
-# -------------------
 # Starting Programmes
 # -------------------
 #
@@ -328,7 +326,7 @@ bindsym $mod+Shift+r restart
 # - version 2 - does away with the nag bar
 #bindsym $mod+Shift+e exec i3-msg exit
 
-# - version 3 - logout using rofi 
+# - version 3 - logout using the rofi interface 
 bindsym $mod+Shift+e exec ~/bin/logout.sh
 
 # =====================================================================================

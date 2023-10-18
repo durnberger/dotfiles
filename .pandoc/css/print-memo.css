@@ -267,29 +267,20 @@ footer p, footer a {
   @top-right {
     content: counter(page);
     font-size: 9pt;
-    height: 12mm;
-    width: 20mm;
-    text-align: center;
+    vertical-align: middle;
   }
   @top-center {
-    background: #0375b4;
     content: "";
-    display: block;
-    height: 0.2mm;
-    width: 100%;
-    opacity: 0.6;
   }
   @top-left {
     content: string(title);
     font-size: 9pt;
-    height: 12mm;
     vertical-align: middle;
     width: 100%;
   }
   @bottom-right {
     content: "Paul Dürnberger";
     font-size: 9pt;
-    height: 12mm;
     width: 100%;
     vertical-align: middle;
   }
@@ -297,7 +288,7 @@ footer p, footer a {
     background: #0375b4;
     content: "";
     display: block;
-    height: 0.2mm;
+    height: 0.25mm;
     width: 100%;
     opacity: 0.6;
   }
@@ -305,7 +296,6 @@ footer p, footer a {
     content: "";
     font-size: 9pt;
     text-transform: uppercase;
-    height: 12mm;
     width: 100%;
     vertical-align: middle;
   }
@@ -336,6 +326,10 @@ footer p, footer a {
 }
 body {
   font-family: source-serif-pro, serif;
+}
+
+header {
+  page-break-after: avoid;
 }
 
 em {
