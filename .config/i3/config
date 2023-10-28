@@ -311,7 +311,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 #
 # lock the screen
 # Screen lock is an option now available using the '~/logout.sh' script
-#bindsym $mod+Shift+Return exec ~/bin/lock.sh
+bindsym $mod+Shift+Return exec ~/bin/lock.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -324,10 +324,10 @@ bindsym $mod+Shift+r restart
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # - version 2 - does away with the nag bar
-#bindsym $mod+Shift+e exec i3-msg exit
+bindsym $mod+Shift+e exec i3-msg exit
 
 # - version 3 - logout using the rofi interface 
-bindsym $mod+Shift+e exec ~/bin/logout.sh
+#bindsym $mod+Shift+e exec ~/bin/logout.sh
 
 # =====================================================================================
 #
