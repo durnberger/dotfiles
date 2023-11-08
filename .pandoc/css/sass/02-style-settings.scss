@@ -105,8 +105,13 @@ a:hover, a:active {
 
 //-------------------------------
 // Images
-img {
-    width: 100%;
+img, figure {
+    max-width: 30rem;
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
 }
 
 img+em, figcaption {
@@ -177,7 +182,8 @@ table.col4gallery {
 // Blockquote
 blockquote {
 	width: 100%;
-	margin-top: 1.5rem;
+	margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
     margin-left: 0;
 	padding-left: 1rem;
 	border-left: solid 0.15rem $theme-color;

@@ -71,9 +71,9 @@
       "accessibility.verbosity.notification": false,
       "accessibility.verbosity.panelChat": false,
       "accessibility.verbosity.terminal": false,
-      "accessibility.verbosity.untitledHint": false,
       "explorer.decorations.badges": false,
       "explorer.decorations.colors": false,
       "telemetry.telemetryLevel": "off",
       "explorer.confirmDragAndDrop": false,
+      "accessibility.verbosity.emptyEditorHint": false,
   }

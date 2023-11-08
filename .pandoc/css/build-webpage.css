@@ -6,7 +6,7 @@ body {
 }
 
 html {
-  font-size: 11pt;
+  font-size: 12pt;
 }
 
 body {
@@ -100,8 +100,13 @@ a:hover, a:active {
   text-transform: uppercase;
 }
 
-img {
-  width: 100%;
+img, figure {
+  max-width: 30rem;
+  display: block;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
 }
 
 img + em, figcaption {
@@ -160,7 +165,8 @@ table.col4gallery td {
 
 blockquote {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   margin-left: 0;
   padding-left: 1rem;
   border-left: solid 0.15rem #0375b4;
@@ -195,7 +201,7 @@ footer p, footer a {
 }
 
 html {
-  font-size: 11pt;
+  font-size: 12pt;
 }
 
 body {
