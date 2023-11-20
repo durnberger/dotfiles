@@ -44,11 +44,12 @@ map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
 --
 -- Remember to install a suitable clipboard programme, for example 'xclip'
 -- More information on the subject can be found via ':h clipboard'
-map("n", "<C-v>", "v", {})          -- switch to visual mode 
-map("i", "<C-v>", "<ESC>v", {})     -- switch to visual mode
 
-map("i", "<leader>p", "<C-o>P", {}) -- paste in insert mode
-map("n", "<leader>p", "p", {})      -- just in case I forget which mode I'm in!!
+--map("n", "<C-v>", "v", {})          -- switch to visual mode 
+--map("i", "<C-v>", "<ESC>v", {})     -- switch to visual mode
+
+--map("i", "<leader>p", "<C-o>P", {}) -- paste in insert mode
+--map("n", "<leader>p", "P", {})      -- just in case I forget which mode I'm in!!
 
 -------------------------------------------------------------------------------------------
 -- Ctrl-return will create a line break.

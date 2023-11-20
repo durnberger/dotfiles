@@ -88,10 +88,12 @@
     font-family: $font-family-text;
     margin: 20mm;
     size: A4;
-        
+    counter-increment: page;
+    
 	@top-right {
-		content: counter(page);
+		content: "Page " counter(page) " of " counter(pages);
 	    font-size: $font-size-tiny;
+        color: $gray-600;
 	    vertical-align: middle;
 	}
 
@@ -102,22 +104,24 @@
 	@top-left {
 		content: string(title);
 		font-size: $font-size-tiny;
-		vertical-align: middle;
+        color: $gray-600;
+        vertical-align: middle;
 		width: 100%;
 	}
 
 	@bottom-right {
 		content: 'Paul Dürnberger';
 		font-size: $font-size-tiny;
-	    width: 100%;
+        color: $gray-600;
+        width: 100%;
 		vertical-align: middle;
 	}
 
 	@bottom-center {
-		background: $theme-color;
+		background: $white;
 		content: '';
 		display: block;
-		height: 0.25mm;
+		height: 0.1mm;
 		width: 100%;
 		opacity: 0.6;
 	}
@@ -125,7 +129,8 @@
 	@bottom-left {
 		content: '';
 		font-size: $font-size-tiny;
-		text-transform: uppercase;
+        color: $gray-600;
+        text-transform: uppercase;
 		width: 100%;
 		vertical-align: middle;
 	}

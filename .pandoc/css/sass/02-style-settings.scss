@@ -119,6 +119,7 @@ img+em, figcaption {
     font-size: $font-size-small;
     font-style: italic;
     text-align: center;
+    padding-top: 0.25rem;
 }
 
 //--------------------
@@ -186,7 +187,7 @@ blockquote {
     margin-bottom: 1.5rem;
     margin-left: 0;
 	padding-left: 1rem;
-	border-left: solid 0.15rem $theme-color;
+	border-left: solid 0.1rem $theme-color;
 }
 
 blockquote p {
