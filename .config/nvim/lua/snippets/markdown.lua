@@ -9,19 +9,59 @@ return {
 
         {
             t({"<aside markdown=\"1\">", ""}),
-            t({"", ""}),            
-            i(0),
+            t({"", ""}),    --create a new line            
+            i(0),           --cursor jumps to this point when snippet is called
             t({"", ""}),
             t({"", "</aside>"}),
         }
 
     ),
 
-    -- caption images 
+    -- figure (single image)
+    require("luasnip").snippet({
+            trig = "image single", 
+            namr = "image single",
+            dscr = "image single",
+        },
+
+        {
+            t({"<figure class=\"centered\">"}),
+            t({"", ""}),            
+            t({"    <img src=\""}),
+            i(0),
+            t({"\">"}),
+            t({"", ""}),            
+            t({"    <figcaption class=\"figure-caption\">   </figcaption>"}),
+            t({"", ""}),            
+            t({"</figure>"}),
+        }
+    ),
+
+     -- figure (multiple images)
+    require("luasnip").snippet({
+            trig = "image multiple", 
+            namr = "image multiple",
+            dscr = "image multiple",
+        },
+
+        {
+            t({"<figure class=\"figure\" style=\"width: %\">"}),
+            t({"", ""}),            
+            t({"    <img src=\""}),
+            i(0),
+            t({"\" class=\"figure-img img-fluid\">"}),
+            t({"", ""}),            
+            t({"    <figcaption class=\"figure-caption\">   </figcaption>"}),
+            t({"", ""}),            
+            t({"</figure>"}),
+        }
+    ),
+           
+    -- standalone caption for images 
     require("luasnip").snippet({
             trig = "caption", 
-            namr = "Caption for image",
-            dscr = "Caption for an image",
+            namr = "image caption",
+            dscr = "image caption",
         },
 
         {
@@ -30,22 +70,7 @@ return {
             t({"</figcaption>", ""}),
         }
     ),
-
-   -- image & caption placeholder 
-   require("luasnip").snippet({
-            trig = "image", 
-            namr = "Figure, image & caption",
-            dscr = "Image placeholder",
-        },
-
-        {
-            t({"<figure>", ""}),                  
-            t({"    <img src=\""}), i(0), t({"\" alt=\"image\">", ""}),
-            t({"    <figcaption> </figcaption>", ""}),       
-            t({"</figure>"})
-        }
-    ),
-        
+       
     -- yaml front matter
     require("luasnip").snippet({
             trig = "fm",
