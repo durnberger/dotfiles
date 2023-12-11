@@ -31,8 +31,8 @@ p, a, ul, ol, li, em, code, th, tr, td {
   margin-bottom: 2rem;
 }
 
-.closing {
-  margin-bottom: 6rem;
+.signature {
+  margin-top: 6rem;
 }
 
 @media print {

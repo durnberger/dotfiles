@@ -84,11 +84,15 @@ exec_always --no-startup-id xautolock -time 5 -locker ~/bin/lock.sh
 
 # -------------------------
 # Bluetooth Manager
-#exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 
 # -------------------------
 # Connect Bluetooth Devices
-#exec --no-startup-id ~/bin/connect-bluetooth.sh
+exec --no-startup-id ~/bin/connect-bluetooth.sh
+
+# -------------------------
+# Start Cryptomator
+exec --no-startup-id cryptomator 
 
 # -------------------------
 # HP Printer System Tray Status Service
@@ -170,8 +174,11 @@ bindsym $mod+g exec gimp
 # Open music player
 bindsym $mod+p exec $terminal -e musikcube
 
+# New daily note (j = journal) 
+bindsym $mod+j exec $terminal -e /home/paul/bin/new-daily-note.sh 
+
 # New quick note 
-bindsym $mod+n exec $terminal -e /home/paul/bin/new-daily-note.sh 
+bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
 
 # -----------------------
 # Programme Menu Launcher
@@ -324,10 +331,10 @@ bindsym $mod+Shift+r restart
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # - version 2 - does away with the nag bar
-bindsym $mod+Shift+e exec i3-msg exit
+#bindsym $mod+Shift+e exec i3-msg exit
 
 # - version 3 - logout using the rofi interface 
-#bindsym $mod+Shift+e exec ~/bin/logout.sh
+bindsym $mod+Shift+e exec ~/bin/logout.sh
 
 # =====================================================================================
 #

@@ -62,7 +62,6 @@ map("i", "<C-cr>", " <br /><cr>", {})
 -- `G` moves the cursor to the end of the document
 -- `A` switches back to insert mode 
 map("n", "<leader>w", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
-map("i", "<leader>w", "<ESC>:%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> GA", {})
 
 -------------------------------------------------------------------------------------------
 -- Split Windows 
@@ -73,10 +72,6 @@ map("n", "wb", ":split<cr> <C-w>=<cr>", {} )    -- split below
 
 -- Equalize size of open windows 
 map("n", "we", "<C-w>=<cr>", {})
-
--- Open terminal window to the right of the current window  
--- (To close the terminal window type 'exit' at the prompt, then hit 'enter' twice)
-map("n", "wx", ":vsplit<cr> <C-w>l :term<cr> i", {})
 
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})

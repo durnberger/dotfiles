@@ -25,15 +25,23 @@ return {
         },
 
         {
+            t({"<div class=\"row\">"}),
+            t({"", ""}),            
+            t({"<div class=\"col\">"}),
+            t({"", ""}),            
             t({"<figure class=\"centered\">"}),
             t({"", ""}),            
             t({"    <img src=\""}),
             i(0),
             t({"\">"}),
             t({"", ""}),            
-            t({"    <figcaption class=\"figure-caption\">   </figcaption>"}),
+            t({"    <figcaption class=\"figure-caption\"></figcaption>"}),
             t({"", ""}),            
             t({"</figure>"}),
+            t({"", ""}),            
+            t({"</div>"}),
+            t({"", ""}),            
+            t({"</div>"}),
         }
     ),
 
@@ -45,15 +53,38 @@ return {
         },
 
         {
-            t({"<figure class=\"figure\" style=\"width: %\">"}),
+            t({"<div class=\"row\">"}),
+            t({"", ""}),            
+            
+            t({"<div class=\"col\">"}),
+            t({"", ""}),            
+            t({"<figure>"}),
             t({"", ""}),            
             t({"    <img src=\""}),
             i(0),
-            t({"\" class=\"figure-img img-fluid\">"}),
+            t({"\">"}),
             t({"", ""}),            
             t({"    <figcaption class=\"figure-caption\">   </figcaption>"}),
             t({"", ""}),            
             t({"</figure>"}),
+            t({"", ""}),            
+            t({"</div>"}),
+            t({"", ""}),            
+
+            t({"<div class=\"col\">"}),
+            t({"", ""}),            
+            t({"<figure>"}),
+            t({"", ""}),            
+            t({"    <img src=\" \">"}),
+            t({"", ""}),            
+            t({"    <figcaption class=\"figure-caption\">   </figcaption>"}),
+            t({"", ""}),            
+            t({"</figure>"}),
+            t({"", ""}),            
+            t({"</div>"}),
+            t({"", ""}),            
+
+            t({"</div>"}),
         }
     ),
            
