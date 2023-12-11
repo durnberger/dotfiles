@@ -30,7 +30,7 @@ map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
 --------------------------------------------------------------------------------------------
 -- Search and replace
-map({"n", "i"}, "<leader>r", ":%s///g<Left><Left><Left>", {})
+map("n", "<leader>r", ":%s///g<Left><Left><Left>", {})
 
 ---------------------------------------------------------------------------------------------
 -- Toggle spell checking on and off
@@ -61,7 +61,7 @@ map("i", "<C-cr>", " <br /><cr>", {})
 -- Convert open markdown document to pdf
 -- `G` moves the cursor to the end of the document
 -- `A` switches back to insert mode 
-map("n", "<leader>w", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
+map("n", "<leader>p", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
 
 -------------------------------------------------------------------------------------------
 -- Split Windows 
@@ -83,5 +83,4 @@ map("n", "<C-Down>", "<C-w>j", {})
 -- Tidy tables
 -- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
 map("n", "<leader>1", "vip :!pandoc -t markdown-simple_tables<cr>", {})
-map("i", "<leader>1", "<C-o>vip :!pandoc -t markdown-simple_tables<cr>", {})
 
