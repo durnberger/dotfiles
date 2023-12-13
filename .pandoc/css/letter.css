@@ -2,42 +2,63 @@
 @import url("https://use.typekit.net/bpt3jug.css");
 
 html {
-  font-size: 11pt;
+    font-size: 11pt;
 }
 
 body {
-  font-family: source-serif-pro, serif;
+    font-family: source-serif-pro, serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: margin-mvb, sans-serif;
-  text-transform: uppercase;
+    font-family: margin-mvb, sans-serif;
+    text-transform: uppercase;
 }
 
 p, a, ul, ol, li, em, code, th, tr, td {
-  font-family: source-serif-pro, serif;
+    font-family: source-serif-pro, serif;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    font-size: 10pt;
+    border: solid #f2f2f2 1px;
+    padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td {
+    white-space: nowrap;
 }
 
 .sender {
-  font-family: margin-mvb, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
+    font-family: margin-mvb, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
 }
 
 .contact-details {
-  text-align: center;
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .signature {
-  margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 @media print {
   html {
-    font-size: 12pt;
+    font-size: 11pt;
   }
 
   body {
@@ -65,6 +86,7 @@ p, a, ul, ol, li, em, code, th, tr, td {
   p, em, ul, ol, li, th, tr, td {
     color: #000000;
   }
+  
   p {
     /* Try to have at least the final three lines carry across to the next page*/
     widows: 3;
@@ -82,7 +104,6 @@ p, a, ul, ol, li, em, code, th, tr, td {
   }
 
   table {
-    width: 95%;
     page-break-inside: avoid;
   }
 

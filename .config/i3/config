@@ -175,10 +175,10 @@ bindsym $mod+g exec gimp
 bindsym $mod+p exec $terminal -e musikcube
 
 # New daily note (j = journal) 
-bindsym $mod+j exec $terminal -e /home/paul/bin/new-daily-note.sh 
+bindsym $mod+j exec $terminal -e /home/paul/bin/write/new-daily-note.sh 
 
 # New quick note 
-bindsym $mod+n exec $terminal -e /home/paul/bin/new-quick-note.sh 
+bindsym $mod+n exec $terminal -e /home/paul/bin/write/new-quick-note.sh 
 
 # -----------------------
 # Programme Menu Launcher
