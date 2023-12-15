@@ -29,10 +29,10 @@ alias jserve="bundle exec jekyll serve --livereload"
 alias lock='~/bin/lock.sh'
 
 # New daily note (journal)
-alias j='~/bin/new-daily-note.sh'
+alias j='~/bin/write/new-daily-note.sh'
 
 # New quick note
-alias n='~/bin/new-quick-note.sh'
+alias n='~/bin/write/new-quick-note.sh'
 
 # Print
 alias print='~/bin/print-options.sh'

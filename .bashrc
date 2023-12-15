@@ -92,4 +92,3 @@ export FZF_DEFAULT_COMMAND='rg --files --no-follow --hidden --no-ignore-vcs'
 # --preview "cat {}"    display preview of the selected file
 # --border              border around preview box
 export FZF_DEFAULT_OPTS='--multi --preview "cat {}" --border'
-

@@ -9,6 +9,10 @@ body {
     font-family: source-serif-pro, serif;
 }
 
+header {
+    margin-bottom: 2.5rem;;
+}
+
 h1, h2, h3, h4 {
     font-family: margin-mvb, sans-serif;
     text-transform: uppercase;
