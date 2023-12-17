@@ -61,7 +61,7 @@ map("i", "<C-cr>", " <br /><cr>", {})
 -- Convert open markdown document to pdf
 -- `G` moves the cursor to the end of the document
 -- `A` switches back to insert mode 
-map("n", "<leader>p", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
+map("n", "<leader>w", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
 
 -------------------------------------------------------------------------------------------
 -- Split Windows 
