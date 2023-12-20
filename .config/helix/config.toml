@@ -24,10 +24,10 @@ display-messages = true
 
 [editor.soft-wrap]
 enable = true
-max-wrap = 25
 max-indent-retain = 0
-wrap-indicator = ""  # Use "" to hide indicator
+max-wrap = 25
 wrap-at-text-width = true
+wrap-indicator = ""  # Use "" to hide indicator
 
 [keys.normal]
 "ins" = "insert_mode" # Until I get used to using "i"!
