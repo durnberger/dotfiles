@@ -8,3 +8,4 @@ require("config.lazy")
 -- The following is dependant on the plugin `nvim-cmp.lua`
 -- Load snippets from ~/.config/nvim/lua/snippets/
 require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/snippets/"})
+

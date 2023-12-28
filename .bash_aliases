@@ -43,6 +43,9 @@ alias rip='~/bin/rip-options.sh'
 # Server
 alias server='~/bin/server-mount.sh'
 
+# Spellchecking
+alias spell='~/bin/helix/hx-spellcheck.sh'
+
 # Synaptic
 alias synaptic='sudo synaptic'
 

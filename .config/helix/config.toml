@@ -1,4 +1,5 @@
-# Options are listed at https://docs.helix-editor.com/configuration.html
+# Available options listed at;
+# https://docs.helix-editor.com/configuration.html
 
 theme = "onedark"
 
@@ -29,5 +30,19 @@ max-wrap = 25
 wrap-at-text-width = true
 wrap-indicator = ""  # Use "" to hide indicator
 
-[keys.normal]
-"ins" = "insert_mode" # Until I get used to using "i"!
+[keys.normal] # Key mapping in normal mode
+"ins" = "insert_mode"
+"del" = "delete_selection"
+"C-home" = "goto_file_start" # Ctrl-home = go to top of file
+"C-end" = "goto_last_line" # Ctrl-end = go to end of file
+
+[keys.normal."\\"]
+# Tapping '\' will bring up my list of custom actions
+# View the target files at '~/bin/helix' for more information on each
+"c" = ":config-open"
+"f" = ":run-shell-command /usr/bin/pandoc -t markdown-simple_tables"
+"i" = ":insert-output ~/bin/helix/snippet-single-image"
+"m" = ":insert-output ~/bin/helix/snippet-multi-images"
+"p" = ":run-shell-command ~/bin/helix/hx-md-to-pdf.sh" # Print to pdf
+"r" = ":reload" # Reload current file and discard changes
+"s" = ":run-shell-command ~/bin/helix/hx-spellcheck.sh" # Spellcheck

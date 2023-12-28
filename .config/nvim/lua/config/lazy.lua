@@ -1,5 +1,4 @@
 -- lua/config/lazy.lua
--- ===================
 
 -- install lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

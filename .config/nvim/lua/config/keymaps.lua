@@ -30,26 +30,11 @@ map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
 --------------------------------------------------------------------------------------------
 -- Search and replace
-map("n", "<leader>r", ":%s///g<Left><Left><Left>", {})
+map("n", "<leader>r", ":%s///g<Left><Left><Left>", {desc = "Search & replace"})
 
 ---------------------------------------------------------------------------------------------
 -- Toggle spell checking on and off
-map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
-
----------------------------------------------------------------------------------------------
--- Cut copy and paste 
--- To ensure the default register is the system clipboard, add the following to 'options.lua'
---
---      vim.opt.clipboard:append("unnamedplus")
---
--- Remember to install a suitable clipboard programme, for example 'xclip'
--- More information on the subject can be found via ':h clipboard'
-
---map("n", "<C-v>", "v", {})          -- switch to visual mode 
---map("i", "<C-v>", "<ESC>v", {})     -- switch to visual mode
-
---map("i", "<leader>p", "<C-o>P", {}) -- paste in insert mode
---map("n", "<leader>p", "P", {})      -- just in case I forget which mode I'm in!!
+map("n", "<leader>s", ":set spell!<cr>", {desc = "Toggle spelling"})
 
 -------------------------------------------------------------------------------------------
 -- Ctrl-return will create a line break.
@@ -58,20 +43,23 @@ map({"n", "i"}, "<leader>s", ":set spell!<cr>", {})
 map("i", "<C-cr>", " <br /><cr>", {})
 
 -------------------------------------------------------------------------------------------
--- Convert open markdown document to pdf
+-- Convert markdown document in current buffer to pdf
+map("n", "<leader>p", " ", {desc = "Print options"})
+
 -- `G` moves the cursor to the end of the document
 -- `A` switches back to insert mode 
-map("n", "<leader>w", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {})
+map("n", "<leader>pp", ":%write !~/bin/print/nvim-md-to-pdf.sh<cr><cr> G", {desc = "Print to pdf"})
 
 -------------------------------------------------------------------------------------------
--- Split Windows 
+-- Split Windows
+map("n", "<leader>w", " ", {desc = "Split window"})
 
 -- Open a split screen and equalise the size of each window
-map("n", "wr", ":vsplit<cr> <C-w>=<cr>", {} )   -- split to right
-map("n", "wb", ":split<cr> <C-w>=<cr>", {} )    -- split below
+map("n", "<leader>wr", ":vsplit<cr> <C-w>=<cr>", {desc = "Split right"} )   -- split to right
+map("n", "<leader>wb", ":split<cr> <C-w>=<cr>", {desc = "Split below"} )    -- split below
 
 -- Equalize size of open windows 
-map("n", "we", "<C-w>=<cr>", {})
+map("n", "<leader>we", "<C-w>=<cr>", {desc = "Split equalised"})
 
 -- Move around open windows
 map("n", "<C-Right>", "<C-w>l", {})
@@ -80,7 +68,9 @@ map("n", "<C-Up>", "<C-w>k", {})
 map("n", "<C-Down>", "<C-w>j", {})
 
 -------------------------------------------------------------------------------------------
--- Tidy tables
--- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
-map("n", "<leader>1", "vip :!pandoc -t markdown-simple_tables<cr>", {})
+-- Markdown Options 
+map("n", "<leader>m", " ", {desc = "Markdown formatting"})
 
+-- Tidy Tables
+-- https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
+map("n", "<leader>mt", "vip :!pandoc -t markdown-simple_tables<cr>", { desc = "Tidy table" } )
